@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="TITLE VIEW BIBTEX LAYOUT FORM">
+		<message>
+			<![CDATA[DESC VIEW BIBTEX LAYOUT FORM]]>
+		</message>
+	</layout>
+	<state>
+		<name>TITLE VIEW BIBTEX LAYOUT FORM</name>
+		<description>DESC VIEW BIBTEX LAYOUT FORM</description>
+		<params>
+		</params>
+	</state>
+</metadata>

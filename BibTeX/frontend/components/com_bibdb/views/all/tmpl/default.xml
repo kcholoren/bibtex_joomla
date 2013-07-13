@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="TITLE VIEW ALL LAYOUT DEFAULT">
+		<message>
+			<![CDATA[DESC VIEW ALL LAYOUT DEFAULT]]>
+		</message>
+	</layout>
+	<state>
+		<name>TITLE VIEW ALL LAYOUT DEFAULT</name>
+		<description>DESC VIEW ALL LAYOUT DEFAULT</description>
+		<params>
+			<param name="mostrar_encabezado" type="radio" default="1" label="LABEL MOSTRAR ENCABEZADO" description="DESC MOSTRAR ENCABEZADO">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			<param name="pdf_disabled_alt" type="text" label="LABEL PDF DISABLED ALT" description="DESC PDF DISABLED ALT"/>
+			<param name="pdf_enabled_alt" type="text" label="LABEL PDF ENABLED ALT" description="DESC PDF ENABLED ALT"/>
+			<param name="bib_alt" type="text" label="LABEL BIB ALT" description="DESC BIB ALT"/>
+			<param name="@spacer" type="spacer" default="" label="" description=""/>
+			<param name="mostrar_paginacion" type="radio" default="0" label="LABEL MOSTRAR PAGINACION" description="DESC MOSTRAR PAGINACION">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			<param name="res_por_pagina" type="text" size="5" default="10" label="LABEL RES POR PAGINA" description="DESC RES POR PAGINA" />
+			<param name="mostrar_total_pag" type="radio" default="0" label="LABEL MOSTRAR TOTAL PAG" description="DESC MOSTRAR TOTAL PAG">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param>
+			<param name="@spacer" type="spacer" default="" label="" description=""/>
+			<param name="filtrar_anio" type="text" default="0" label="LABEL FILTRAR ANIO" description="DESC FILTRAR ANIO"/>
+		</params>
+	</state>
+	
+</metadata>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config menu="hide">
+	<params>
+		<param name="upload_folder" type="text" size="50" default="docs" label="PATH TO FILE FOLDER LABEL" description="PATH TO FILE FOLDER DESC" />
+		<param name="upload_maxsize" type="text" size="50" default="2000000" label="MAXIMUM SIZE LABEL" description="MAXIMUM SIZE DESC" />
+		<param name="upload_extensions" type="text" size="50" default="doc,pdf,txt,DOC,PDF,TXT" label="LEGAL EXTENSIONS LABEL" description="LEGAL EXTENSIONS DESC" />
+	</params>
+</config>

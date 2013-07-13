@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+	<name>bibdb</name>
+	<!-- The following elements are optional and free of formatting conttraints -->
+	<creationDate>2009-08-01</creationDate>
+	<author>Pablo E. DALPONTE</author>
+	<authorEmail>pdalponte@hotmail.com</authorEmail>
+	<authorUrl></authorUrl>
+	<copyright>(C) 2009. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<!--  The version string is recorded in the components table -->
+	<version>1.00</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>Este componente para Joomla! permite crear y mantener una base de datos usando la especificacion BibTeX.</description>
+
+	<!-- Site Main File Copy Section -->
+	<files folder="site/component">
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>metadata.xml</filename>
+		<filename>bibdb.php</filename>
+		<folder>controllers</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+	</files>
+
+	<!-- Site Main Language File Copy Section -->
+	<languages folder="site/language/es-ES">
+		<language tag="es-ES">es-ES.com_bibdb.ini</language>
+	</languages>
+	<languages folder="site/language/en-GB">
+		<language tag="en-GB">en-GB.com_bibdb.ini</language>
+	</languages>
+
+	<!-- Install Database Section -->
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+
+	<!-- Uninstall Database Section -->
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+
+	<media folder="site/images/bibdb" destination="../images/bibdb">
+		<filename>bib-file-24.png</filename>
+		<filename>pdf-file-disabled-24.png</filename>
+		<filename>pdf-file-enabled-24.png</filename>
+		<filename>index.html</filename>
+	</media>
+
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu img="components/com_bibdb/assets/images/icon-16-menu.png">Gestor de BibTeXs!</menu>
+		<submenu>
+			<menu img="components/com_bibdb/assets/images/icon-16-submenu-ver-referencias.png">Ver Referencia(s)</menu>
+			<menu img="components/com_bibdb/assets/images/icon-16-submenu-ingresar-referencias.png" link="option=com_bibdb&amp;controller=inputbib">Ingresar Referencia(s)</menu>
+			<menu img="components/com_bibdb/assets/images/icon-16-submenu-categorias.png" link="option=com_categories&amp;section=com_bibdb">Categorias</menu>
+		</submenu>
+
+		<!-- Administration Main File Copy Section -->
+		<!-- Note the folder attribute: This attribute describes the folder
+			to copy FROM in the package to install therefore files copied
+			in this section are copied from /admin/component in the package -->
+		<files folder="admin/component">
+			<!-- Site Main File Copy Section -->
+			<filename>index.html</filename>
+			<filename>bibdb.php</filename>
+			<filename>controller.php</filename>
+			<filename>config.xml</filename>
+			<filename>install.mysql.utf8.sql</filename>
+			<filename>uninstall.mysql.utf8.sql</filename>
+			<folder>assets</folder>
+			<folder>classes</folder>
+			<folder>controllers</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<folder>install</folder>
+		</files>
+
+		<languages folder="admin/language/es-ES">
+			<language tag="es-ES">es-ES.com_bibdb.ini</language>
+		</languages>
+		<languages folder="admin/language/en-GB">
+			<language tag="en-GB">en-GB.com_bibdb.ini</language>
+		</languages>
+	</administration>
+
+	<!-- Custom Install Script to execute -->
+	<installfile>install/install.bibdb.php</installfile>
+
+	<!-- Custom Uninstall Script to execute -->
+	<uninstallfile>install/uninstall.bibdb.php</uninstallfile>
+
+</install>
